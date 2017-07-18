@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AutoMessages:jar">
+    <output-path>$USER_HOME$/Desktop/Server/plugins</output-path>
+    <root id="archive" name="AutoMessages.jar">
+      <element id="module-output" name="AutoMessages" />
+    </root>
+  </artifact>
+</component>

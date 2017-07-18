@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoMessages/AutoMessages.iml" filepath="$PROJECT_DIR$/AutoMessages/AutoMessages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Core/Core.iml" filepath="$PROJECT_DIR$/Core/Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatabaseAPI/DatabaseAPI.iml" filepath="$PROJECT_DIR$/DatabaseAPI/DatabaseAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KitPvP.iml" filepath="$PROJECT_DIR$/KitPvP.iml" />
+    </modules>
+  </component>
+</project>
