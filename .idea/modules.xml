@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AutoMessages/AutoMessages.iml" filepath="$PROJECT_DIR$/AutoMessages/AutoMessages.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Core/Core.iml" filepath="$PROJECT_DIR$/Core/Core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DatabaseAPI/DatabaseAPI.iml" filepath="$PROJECT_DIR$/DatabaseAPI/DatabaseAPI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/KitPvP.iml" filepath="$PROJECT_DIR$/KitPvP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KitPvP.iml" filepath="$PROJECT_DIR$/.idea/KitPvP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MDatabase/MDatabase.iml" filepath="$PROJECT_DIR$/MDatabase/MDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MKits/MKits.iml" filepath="$PROJECT_DIR$/MKits/MKits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MMessages/MMessages.iml" filepath="$PROJECT_DIR$/MMessages/MMessages.iml" />
     </modules>
   </component>
 </project>

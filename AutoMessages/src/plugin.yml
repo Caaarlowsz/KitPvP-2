@@ -1,7 +1,0 @@
-name: AutoMessages
-main: net.meziyani.automessages.AutoMessages
-version: 1.0
-author: Meziyani
-commands:
-  automessages:
-    aliases: [am,automessages, messages]
