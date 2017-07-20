@@ -1,0 +1,9 @@
+messages:
+  - "&aThis is a default auto message with some colors"
+  - "Another automessage withour color"
+  - "third automessage"
+
+#Delay in seconds (Reload the complete server for this to take effect)
+delay: 10
+#Disable ingame with /am disable
+enabled: true

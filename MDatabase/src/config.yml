@@ -1,0 +1,6 @@
+#Localhost by default
+host: "127.0.0.1:3306/"
+
+credentials:
+  user: "root"
+  password: ""

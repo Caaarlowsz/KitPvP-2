@@ -1,0 +1,13 @@
+name: MKits
+version: 1.0
+main: net.meziyani.kitpvp.Core
+author: Meziyani
+commands:
+  kitpvp:
+    aliases: [kit, pvp]
+  points:
+    aliases: [pts, money, balance, baltop, bal]
+  setspawn:
+  spawn:
+    aliases: [hub, lobby, respawn, kill]
+depend: [WorldGuard]

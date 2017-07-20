@@ -1,0 +1,6 @@
+name: MDatabase
+author: Meziyani
+version: 1.0
+website: www.meziyani.net
+main: net.meziyani.database.MDatabase
+description: Database API to connect easily to Mysql
