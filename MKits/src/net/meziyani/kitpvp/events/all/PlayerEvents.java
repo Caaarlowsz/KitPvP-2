@@ -92,12 +92,13 @@ public class PlayerEvents implements Listener{
         Player p = e.getEntity();
         MPlayer mpl = core.getPlayerManager().getMPlayer(p);
 
-        String message = "&9"+p.getName()+" &7(&c "+(p.getHealth()/2)+ " " + Symbols.HEART+" &7)"+
-                " has been killed by &9"
-                +p.getKiller()+" &7( "+
-                (p.getKiller().getHealth()/2)+" " +
-                Symbols.HEART+" &7)";
-        mpl.sendMessage(message);
+        if(p.getKiller() != null && p.getKiller() instanceof Player){
+            String message = "&9"+p.getName()+" &7has been killed by &9" +p.getKiller().getName()+" &7( &c"+ (p.getKiller().getHealth()/2)+" " + Symbols.HEART+" &7)";
+            mpl.sendMessage(message);
+            core.getPlayerManager().getMPlayer(p.getKiller()).sendMessage(message);
+        }
+
+
 
     }
 

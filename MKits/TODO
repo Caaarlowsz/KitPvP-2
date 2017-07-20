@@ -4,7 +4,7 @@
 [] Database connection
 [x] Kit (Give stuff)
 [] Kits (Copy mystikpvp)
-[] Player spawn
+[x] Player spawn
 [/] Chat management
 [x] WorldGuard integration
 [x] Death Messages
@@ -12,6 +12,8 @@
 [...] Rank Management
 [] /stalk
 [] /screen
+[] clear player in MPLayer with armor and effects
+[] Vote kick/ban plugin a la csgo
 
 //Maybe
 [] Admin system/panel

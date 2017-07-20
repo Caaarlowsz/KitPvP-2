@@ -28,7 +28,7 @@ public class MainCmd implements CommandExecutor{
             MPlayer mpl = core.getPlayerManager().getMPlayer(p);
             if(cmd == Bukkit.getPluginCommand("kitpvp")){
                 if(args.length == 0){
-                    mpl.openInventory(core.ks.getInventory());
+                    mpl.openInventory(core.ks.getInventory(mpl));
                 } else {
                     String arg1 = args[0];
 

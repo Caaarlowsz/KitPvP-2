@@ -2,7 +2,9 @@ package net.meziyani.kitpvp.kit;
 
 import net.meziyani.kitpvp.Core;
 import net.meziyani.kitpvp.players.MPlayer;
+import net.meziyani.kitpvp.utils.ItemBuilder;
 import org.bukkit.Bukkit;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -19,7 +21,8 @@ import java.util.ArrayList;
 public class KitSelector implements Listener {
     private ArrayList<Kits> kits;
     private Core core;
-    private Inventory inv;
+    private int size = 36;
+    private String name = "§aSelect Kit";
 
     public KitSelector(Core core){
         this.core = core;
@@ -31,24 +34,32 @@ public class KitSelector implements Listener {
         for (Kits kit : Kits.values()) {
             kits.add(kit);
         }
-        createInventory();
     }
 
-    public void createInventory(){
-        inv = Bukkit.createInventory(null, 36, "§aSelect Kit");
+    public Inventory getInventory(MPlayer mpl){
+        Inventory inv = Bukkit.createInventory(mpl.getPlayer(),  size, name);;
         for(Kits kit : kits){
-            inv.addItem(kit.getKit().getIcon());
-        }
-    }
+            if(mpl.getKit().name().equalsIgnoreCase(kit.name())){
+                System.out.println(mpl.getKit().name());
+                ItemStack current = new ItemBuilder(kit.getKit().getIcon().getType(), kit.getKit().getIcon().getAmount()).setName(kit.getKit().getIcon().getItemMeta().getDisplayName()).toItemStack();
+                inv.addItem(new ItemBuilder(current).addEnchant(Enchantment.DURABILITY,1).toItemStack());
+                continue;
+            } else {
+                System.out.println(mpl.getKit().name());
+                inv.addItem(kit.getKit().getIcon());
+                continue;
+            }
 
-    public Inventory getInventory(){
+
+
+        }
         return inv;
     }
 
     @EventHandler
     public void onInvClic(InventoryClickEvent e){
         if (e.getSlot() < 0) return;
-        if (!e.getInventory().getName().equalsIgnoreCase(inv.getName())) return;
+        if (!e.getInventory().getName().equalsIgnoreCase(name)) return;
         if (e.getCurrentItem().getItemMeta() == null) return;
 
         Player p = (Player) e.getWhoClicked();
